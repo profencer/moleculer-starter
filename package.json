@@ -6,11 +6,11 @@
     "build": "tsc",
     "dev": "ts-node ./node_modules/moleculer/bin/moleculer-runner.js --hot --repl --config moleculer.config.ts services/**/*.service.ts",
     "cli": "moleculer connect NATS",
-    "start": "moleculer-runner services",
+    "start:runner": "moleculer-runner services",
     "ci": "jest --watch",
     "test": "jest --coverage",
     "lint": "tslint -p tsconfig.json",
-    "dc:up": "docker-compose up --build -d --scale api=3 --scale greeter=2",
+    "start": "docker-compose up --build -d --scale api=3 --scale greeter=2",
     "dc:down": "docker-compose down"
   },
   "keywords": [
