@@ -8,4 +8,4 @@ COPY . .
 RUN npm install && npm run build && npm prune --production
 
 ENV NODE_ENV=production
-CMD ["npm", "start"]
+CMD ["npm", "run dc:up"]
